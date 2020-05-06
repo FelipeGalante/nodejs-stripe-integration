@@ -1,0 +1,26 @@
+<section class="py-2">
+	<div class="row">
+		<div class="col-md-6 text-center">
+			<h1 class="display-3 mt-3 pt-5">
+				Levven Controls
+			</h1>
+			<p class="lead">Intelligent wire-free Controls</p>
+		</div>
+		<form action="/charge" method="POST">
+			<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+				data-key="{{stripePublishableKey}}" data-amount="7000" data-name="Levven Controls"
+				data-description="Levven Controls Pro 10 Amp On/Off Controller (GPC10)"
+				data-image="/img/marketplace.png" data-locale="auto">
+				</script>
+			<script>
+				// Hide default stripe button
+				document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+			</script>
+			<button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase For $70</button>
+		</form>
+	</div>
+	<div class="col-md-6">
+		<img src="/img/tina.jpg" alt="" class="img-fluid">
+	</div>
+	</div>
+</section>
